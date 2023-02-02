@@ -27,8 +27,7 @@ body {
   display: grid;
   grid-template-columns: repeat(20, 1fr);
   background-color: #ffffff;
-  margin-left: 20rem;
-  margin-right: 20rem;
+  margin: 0 18rem;
 }
 
 .nav {
@@ -102,7 +101,8 @@ header {
 
 .opening-para h3 {
   text-align: center;
-  font-style: bold;
+  font-style: italic;
+  text-shadow: 0 0.1rem 0.1rem #c2c2c2;
   margin: 1.5rem 0;
 }
 
@@ -184,6 +184,71 @@ td {
   width: 80px;
   padding: 0;
   margin: 5px;
+}
+
+.comments-section {
+  grid-column: 1 / 12;
+  margin-top: 6rem;
+  padding-right: 2rem;
+}
+
+.comments-section-header {
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #cccccc;
+}
+.comments-section-header h3 {
+  text-transform: uppercase;
+  padding: 1rem 0 0.5rem 0;
+}
+
+.comments-section-header p {
+  color: #808080;
+  font-size: 0.9rem;
+}
+
+.user-comment-container {
+  margin-top: 2rem;
+}
+
+.user-img {
+  float: left;
+  max-width: 3.5rem;
+  padding-right: 1rem;
+}
+
+.comment-textarea {
+  margin: 0 0 1rem 0;
+}
+
+.comment-button {
+  width: 10rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  margin-left: 4.5rem;
+}
+
+.comment-button:hover {
+  background-color: #8ed1fc;
+  border: none;
+  color: #ffffff;
+}
+
+.comment-card {
+  margin-top: 4rem;
+  padding-top: 2rem;
+  border-top: 1px solid #cccccc;
+}
+
+.comment-card h4 {
+  font-size: 0.8rem;
+  color: #808080;
+}
+
+.comment-card p {
+  line-height: 1.5rem;
+  color: #272727;
 }
 
 .misc-section {
@@ -273,18 +338,18 @@ ol {
   background-color: #f2f2f2;
 }
 
-.user-contribution-form {
+.user-contribution-container {
   width: 100%;
   margin-top: 1rem;
 }
 
-.user-contribution-form h3 {
+.user-contribution-container h3 {
   background-color: #ffffff;
   text-align: left;
   font-size: 1rem;
 }
 
-.user-contribution-form p {
+.user-contribution-container p {
   margin: 1rem 1.5rem;
 }
 
@@ -317,6 +382,7 @@ input {
   justify-content: space-evenly;
   padding-bottom: 2rem;
 }
+
 .form-buttons {
   width: 10rem;
   font-size: 0.875rem;
@@ -331,7 +397,7 @@ input {
   color: #ffffff;
 }
 
-textarea {
+.pitch-input {
   width: 98%;
   height: 20rem;
 }
