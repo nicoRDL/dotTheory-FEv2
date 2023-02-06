@@ -1,0 +1,209 @@
+.nav {
+  display: block;
+  position: static;
+  background-color: none;
+  background: none;
+  box-shadow: none;
+}
+
+.title-logo {
+  font-weight: 800;
+  font-style: italic;
+  font-size: 20px;
+  color: #000000;
+}
+
+.nav-logo {
+  display: block;
+  margin: 0 auto;
+}
+
+.title-logo h2 {
+  text-align: center;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 40rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #8ed1fc;
+}
+
+.nav li {
+  display: inline-block;
+  float: none;
+  margin: 0;
+  text-shadow: 0 .1rem .1rem #c2c2c2;
+}
+
+.nav a{
+  color: #000000;
+}
+
+.grid-container {
+  margin: 0 11rem;
+}
+
+.categories-section {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.1rem solid #505050;
+  padding: 1rem 0 5rem 0;
+}
+
+.page-main-title {
+  grid-column: 1/-1;
+  padding: 4rem 0;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-shadow: 0 .1rem .1rem #c2c2c2;
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.category-container {
+  position: relative;
+  text-align: center;
+  background-color: #cccccc;
+  background-size: 200%;
+  height: 18rem;
+  width: 29rem;
+  overflow: hidden;
+  transition: opacity 0.5s;
+}
+
+.category-container:hover {
+  opacity: 0.8;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 18rem;
+  width: 30rem;
+  padding: 0 auto;
+  margin: 0 auto;
+  font-size: 2rem;
+  color: #ffffff;
+  text-shadow: 0 .1rem .1rem #c2c2c2;
+  transition: color 0.5s;
+}
+
+.category-container .category-header:hover {
+  color: #000000;
+}
+
+.article-card-img {
+  float: left;
+  padding-right: 1rem;
+}
+
+.feature-section {
+  background-image: url("/images/customizable1.jpg");
+}
+
+.recent-post-section {
+  background-image: url("/images/featureImage-SizeDown.jpeg");
+}
+
+.featured-product-section {
+  background-image: url("/images/Corsair_K100_RGB.jpeg");
+}
+
+.homepage-articles-section {
+  grid-column: 1 / 15;
+  margin-top: 4rem;
+  padding-top: 0;
+}
+
+.homepage-articles-header {
+  font-size: 1.75rem;
+  font-weight: 900;
+  padding-top: 1.5rem;
+}
+
+.recent-post-card {
+  margin-bottom: 3rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid #cccccc;
+}
+
+.recent-post-card h2 {
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  color: #000000;
+  font-size: 1.125rem;
+}
+
+.recent-post-img {
+  float: left;
+  width: 14rem;
+  height: 10rem;
+  object-fit: cover;
+  padding: 0rem 1.5rem 1rem 0rem;
+}
+
+.articles-section-expand-btn {
+  background-color: #f2f2f2;
+  padding: .5rem 1rem;
+  border-radius: .5rem;
+  border: .5px solid #000000;
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+}
+
+.articles-section-expand-btn:hover {
+  background-color: #8ed1fc;
+  color: #ffffff;
+}
+
+.homepage-misc-section {
+  grid-column: 15 / -1;
+  margin-top: 2rem;
+  padding-top: 2rem;
+}
+
+.about-author-section {
+  grid-column: 1/-1;
+  margin-top: 2rem;
+  padding: 4rem 9rem;
+}
+
+.about-author-section-header {
+  text-transform: uppercase;
+  text-shadow: 0 .1rem .1rem #c2c2c2;
+  font-size: 2rem;
+  font-weight: 900;
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.author-name {
+  font-size: 1.25rem;
+  color: #808080;
+  text-transform: uppercase;
+  margin: 4rem 0 1rem 0;
+  padding-top: 1rem;
+}
+
+.about-author-section p {
+  line-height: 2.5rem;
+  color: #000000;
+  font-size: 1.25rem;
+  margin: 2rem 0;
+}
+
+.about-author-section img {
+  float: left;
+  max-width: 10rem;
+  padding-right: 1rem;
+}
