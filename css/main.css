@@ -228,7 +228,7 @@ td {
   margin: 0 0 1rem 0;
 }
 
-.comment-button {
+.comment__button {
   width: 10rem;
   font-size: 0.875rem;
   font-weight: 700;
@@ -237,7 +237,7 @@ td {
   margin-left: 4.5rem;
 }
 
-.comment-button:hover {
+.comment__button:hover {
   background-color: #8ed1fc;
   border: none;
   color: #ffffff;
