@@ -103,15 +103,15 @@
 }
 
 .feature-section {
-  background-image: url("/images/customizable1.jpg");
+  background-image: url("../images/customizable1.jpg");
 }
 
 .recent-post-section {
-  background-image: url("/images/featureImage-SizeDown.jpeg");
+  background-image: url("../images/featureImage-SizeDown.jpeg");
 }
 
 .featured-product-section {
-  background-image: url("/images/Corsair_K100_RGB.jpeg");
+  background-image: url("../images/Corsair_K100_RGB.jpeg");
 }
 
 .homepage-articles-section {
