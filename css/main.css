@@ -31,6 +31,7 @@ body {
   top: 0;
   background-color: #8ed1fc;
   box-shadow: 0 0.25rem 0.5rem #ffea00;
+  z-index: 10;
 }
 
 .nav-logo-link {
@@ -425,7 +426,7 @@ input {
 
 /* TABLET BREAKPOINT */
 
-@media screen and (min-width: 48rem) {
+@media screen and (min-width: 768px) {
   .nav {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -597,7 +598,7 @@ input {
 
 /* DESKTOP BREAKPOINT */
 
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 1024px) {
   .nav-lip {
     content: "";
     grid-column: 1/-1;
