@@ -25,7 +25,7 @@
   height: 18rem;
   background-size: 150%;
   overflow: hidden;
-  box-shadow: .25rem .5rem .5rem #cccccc;
+  box-shadow: 0.25rem 0.5rem 0.5rem #cccccc;
   transition: opacity 0.5s, background-size 0.5s;
 }
 
@@ -37,9 +37,8 @@
 
 .category-container h2 {
   font-size: 2.2rem;
-  text-shadow: 0 .1rem .1rem #c2c2c2;
+  text-shadow: 0 0.1rem 0.1rem #c2c2c2;
   transition: color 0.5s;
-  
 }
 
 .feature-section {
@@ -96,14 +95,14 @@
 
 .articles-section-expand-btn {
   background-color: #f2f2f2;
-  padding: .5rem 1rem;
-  border-radius: .5rem;
-  border: .5px solid #000000;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  border: 0.5px solid #000000;
   display: block;
   margin: 0 auto;
   color: #000000;
   text-transform: uppercase;
-  font-size: .8rem;
+  font-size: 0.8rem;
 }
 
 .articles-section-expand-btn:hover {
@@ -120,7 +119,7 @@
 
 .about-author-section-header {
   text-transform: uppercase;
-  text-shadow: 0 .1rem .1rem #c2c2c2;
+  text-shadow: 0 0.1rem 0.1rem #c2c2c2;
   font-size: 1.625rem;
   text-align: center;
   margin: 2rem auto;
@@ -155,160 +154,160 @@
 
 @media screen and (min-width: 768px) {
   #main-title {
-      font-size: 1.75rem;
+    font-size: 1.75rem;
   }
 
   .categories-section {
-      padding: 1.5rem 0 4rem 0;
-      border-bottom: 1px solid #cccccc;
+    padding: 1.5rem 0 4rem 0;
+    border-bottom: 1px solid #cccccc;
   }
 
   .category-container {
-      width: 40rem;
-      max-width: 60rem;
-      background-size: 180%;
+    width: 40rem;
+    max-width: 60rem;
+    background-size: 180%;
   }
 
   .homepage-articles-section {
-      margin-top: 0;
+    margin-top: 0;
   }
 
   .homepage-articles-header {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .recent-post-card {
-      padding-bottom: 2rem;
-      margin: 0 auto;
-      border-bottom: none;
+    padding-bottom: 2rem;
+    margin: 0 auto;
+    border-bottom: none;
   }
 
   .recent-post-img {
-      display: block;
-      float: left;
-      width: 14rem;
-      height: 10rem;
-      padding: 0 1rem 1.5rem 0;
+    display: block;
+    float: left;
+    width: 14rem;
+    height: 10rem;
+    padding: 0 1rem 1.5rem 0;
   }
 
   .articles-section-expand-btn {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .nav-lip {
-      background: #8ed1fc;
-      box-shadow: none;
+    background: #8ed1fc;
+    box-shadow: none;
   }
-  
+
   .nav {
-      box-shadow: none;
-      background: none;
+    box-shadow: none;
+    background: none;
   }
-  
+
   .grid-container {
-      max-width: 80rem;
+    max-width: 80rem;
   }
-  
+
   .categories-section {
-      grid-column: 1/-1;
-      margin: 0 auto;
-      border-bottom: 0.1rem solid #505050;
-      padding: 1rem 0 5rem 0;
+    grid-column: 1/-1;
+    margin: 0 auto;
+    border-bottom: 0.1rem solid #505050;
+    padding: 1rem 0 5rem 0;
   }
 
   .categories-container {
-      grid-column: 1/-1;
-      margin: 0 auto;
+    grid-column: 1/-1;
+    margin: 0 auto;
   }
 
   .category-container {
-      background-size: 200%;
+    background-size: 200%;
   }
 
   .upper-categories {
-      display: flex;
-      width: 60rem;
-      height: 28rem;
+    display: flex;
+    width: 60rem;
+    height: 28rem;
   }
 
   .bottom-categories {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      width: 62rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 62rem;
   }
 
   .recent-post-section {
-      width: 30rem;
+    width: 30rem;
   }
 
   .featured-product-section {
-      width: 30rem;
+    width: 30rem;
   }
 
   .category-container:hover {
-      background-size: 150%;
+    background-size: 150%;
   }
-  
+
   .category-container h2 {
-      font-size: 1.875rem;
+    font-size: 1.875rem;
   }
-  
+
   .homepage-articles-section {
-      grid-column: 3/19;
+    grid-column: 3/19;
   }
-  
+
   .homepage-articles-header {
-      font-size: 1.75rem;
+    font-size: 1.75rem;
   }
 
   .recent-post-card {
-      padding-top: 2rem;
-      padding-bottom: 4rem;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
   }
-  
+
   .recent-post-img {
-      width: 14rem;
-      height: 10rem;
-      object-fit: cover;
-      padding: 0 1.5rem 1rem 0;
+    width: 14rem;
+    height: 10rem;
+    object-fit: cover;
+    padding: 0 1.5rem 1rem 0;
   }
-  
+
   .articles-section-expand-btn {
-      font-size: 1.25rem;
-      margin-top: 2rem;
+    font-size: 1.25rem;
+    margin-top: 2rem;
   }
-  
+
   .about-author-section {
-      padding: 4rem 9rem 0 9rem;
-      border-top: 1px solid #cccccc;
+    padding: 4rem 9rem 0 9rem;
+    border-top: 1px solid #cccccc;
   }
-  
+
   .about-author-section-header {
-      font-size: 2rem;
+    font-size: 2rem;
   }
 
   .about-author-section-body {
-      text-align: left;
-      line-height: 2.5rem;
-      font-size: 1.25rem;
-      margin: 2rem 0;
+    text-align: left;
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+    margin: 2rem 0;
   }
 
   .author-name {
-      font-size: 1.25rem;
-      margin: 4rem 0 1rem 0;
-      padding-top: 1rem;
+    font-size: 1.25rem;
+    margin: 4rem 0 1rem 0;
+    padding-top: 1rem;
   }
-  
+
   .about-author-section img {
-      float: left;
-      max-width: 10rem;
+    float: left;
+    max-width: 10rem;
   }
 
   .footer {
-      margin-top: 3rem;
+    margin-top: 3rem;
   }
 }
