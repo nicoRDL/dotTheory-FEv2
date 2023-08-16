@@ -98,7 +98,6 @@ a:hover {
 .article-item {
   line-height: 1.75rem;
 }
-
 .article-item-header {
   margin: 1rem auto;
   padding-top: 1rem;
@@ -112,7 +111,6 @@ a:hover {
     margin-bottom: 1.5rem;
   }
 }
-
 .article-item-text {
   margin: 1rem auto;
   text-align: justify;
@@ -130,7 +128,6 @@ a:hover {
     padding-right: 4rem;
   }
 }
-
 .article-item-text-ender {
   font-size: 1.125rem;
   font-weight: 700;
@@ -140,12 +137,10 @@ a:hover {
   padding-bottom: 1rem;
   border-bottom: 1px solid #cccccc;
 }
-
 .comments-section-header h3 {
   text-transform: uppercase;
   padding: 1rem 0 0.5rem 0;
 }
-
 .comments-section-header p {
   color: #808080;
   font-size: 0.9rem;
@@ -155,7 +150,6 @@ a:hover {
   font-size: 0.8rem;
   color: #808080;
 }
-
 .comment-card p {
   line-height: 1.5rem;
   color: #272727;
@@ -179,7 +173,6 @@ a:hover {
     padding: 1.125rem 1rem;
   }
 }
-
 .misc-section h4 {
   padding-top: 1rem;
   padding-bottom: 0;
@@ -210,7 +203,6 @@ a:hover {
   text-align: left;
   font-size: 1rem;
 }
-
 .user-contribution-container p {
   margin: 1rem 1.5rem;
   padding-top: 1rem;
@@ -666,14 +658,12 @@ a:hover {
     font-size: 1.125rem;
   }
 }
-
 .table-item a {
   color: #000000;
 }
 .table-item a:hover {
   color: #007af3;
 }
-
 .table-item img {
   width: 4rem;
   margin: 0.8rem;
@@ -710,14 +700,64 @@ a:hover {
     box-shadow: none;
   }
 }
-
 .nav-browse {
   background: linear-gradient(to bottom, #007af3, #8ed1fc);
   box-shadow: none;
 }
-
 .nav-homepage {
   box-shadow: none;
+}
+.nav-menu-button {
+  display: block;
+  height: 2rem;
+  margin: 1.125rem 1.5rem 0.5rem auto;
+}
+@media (min-width: 48rem) {
+  .nav-menu-button {
+    display: none;
+  }
+}
+.nav ul {
+  display: none;
+  list-style-type: none;
+}
+@media (min-width: 48rem) {
+  .nav ul {
+    grid-column: 4/span 2;
+    display: flex;
+    justify-content: end;
+    padding: 1.75rem 2rem 0 0;
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 64rem) {
+  .nav ul {
+    grid-column: 4/6;
+    justify-content: flex-end;
+    padding: 1.75rem 0 1rem 0;
+  }
+}
+.nav li {
+  float: right;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+@media (min-width: 48rem) {
+  .nav li {
+    font-size: 60%;
+    padding-left: 1.25rem;
+  }
+}
+@media (min-width: 64rem) {
+  .nav li {
+    font-size: 1.125rem;
+    padding: 0 1.25rem;
+  }
+}
+.nav li a {
+  display: block;
+  color: #ffffff;
+  text-shadow: 0 0.1rem 0.1rem #c2c2c2;
 }
 
 @media (min-width: 64rem) {
@@ -748,6 +788,21 @@ a:hover {
   z-index: 0;
 }
 
+.nav-logo {
+  height: 3rem;
+}
+@media (min-width: 48rem) {
+  .nav-logo {
+    height: 3.5rem;
+  }
+}
+@media (min-width: 64rem) {
+  .nav-logo {
+    display: block;
+    margin: 0 auto;
+    height: 4rem;
+  }
+}
 .nav-logo-link {
   margin: 0.5rem 2rem 0.5rem 1.5rem;
 }
@@ -762,17 +817,6 @@ a:hover {
   .nav-logo-link {
     margin: 0 4rem 1rem 4rem;
     padding: 0;
-  }
-}
-
-.nav-logo {
-  height: 3rem;
-}
-@media (min-width: 64rem) {
-  .nav-logo {
-    display: block;
-    margin: 0 auto;
-    height: 4rem;
   }
 }
 
@@ -796,73 +840,10 @@ a:hover {
     color: #ffffff;
   }
 }
-
 @media (min-width: 48rem) {
   .title-logo span {
     color: #000000;
   }
-}
-
-@media (min-width: 48rem) {
-  .nav-logo {
-    height: 3.5rem;
-  }
-}
-
-.nav-menu-button {
-  display: block;
-  height: 2rem;
-  margin: 1.125rem 1.5rem 0.5rem auto;
-}
-@media (min-width: 48rem) {
-  .nav-menu-button {
-    display: none;
-  }
-}
-
-.nav ul {
-  display: none;
-  list-style-type: none;
-}
-@media (min-width: 48rem) {
-  .nav ul {
-    grid-column: 4/span 2;
-    display: flex;
-    justify-content: end;
-    padding: 1.75rem 2rem 0 0;
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 64rem) {
-  .nav ul {
-    grid-column: 4/6;
-    justify-content: flex-end;
-    padding: 1.75rem 0 1rem 0;
-  }
-}
-
-.nav li {
-  float: right;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-}
-@media (min-width: 48rem) {
-  .nav li {
-    font-size: 60%;
-    padding-left: 1.25rem;
-  }
-}
-@media (min-width: 64rem) {
-  .nav li {
-    font-size: 1.125rem;
-    padding: 0 1.25rem;
-  }
-}
-
-.nav li a {
-  display: block;
-  color: #ffffff;
-  text-shadow: 0 0.1rem 0.1rem #c2c2c2;
 }
 
 .footer {

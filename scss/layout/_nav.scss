@@ -21,15 +21,66 @@
     margin: 0 auto;
     box-shadow: none;
   }
-}
 
-.nav-browse {
-  background: linear-gradient(to bottom, $color-nav-browse_hover, $color-main);
-  box-shadow: none;
-}
+  &-browse {
+    background: linear-gradient(to bottom, $color-nav-browse_hover, $color-main);
+    box-shadow: none;
+  }
 
-.nav-homepage {
-  box-shadow: none;
+  &-homepage {
+    box-shadow: none;
+  }
+
+  &-menu-button {
+    display: block;
+    height: 2rem;
+    margin: 1.125rem 1.5rem 0.5rem auto;
+  
+    @media #{$tablet-bp} {
+      display: none;
+    }
+  }
+
+  ul {
+    display: none;
+    list-style-type: none;
+  
+    @media #{$tablet-bp} {
+      grid-column: 4 / span 2;
+      display: flex;
+      justify-content: end;
+      padding: 1.75rem 2rem 0 0;
+      font-size: 1.5rem;
+    }
+  
+    @media #{$desktop-bp} {
+      grid-column: 4/6;
+      justify-content: flex-end;
+      padding: 1.75rem 0 1rem 0;
+    }
+  }
+  
+  li {
+    float: right;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+  
+    @media #{$tablet-bp} {
+      font-size: 60%;
+      padding-left: 1.25rem;
+    }
+  
+    @media #{$desktop-bp} {
+      font-size: 1.125rem;
+      padding: 0 1.25rem;
+    }
+  }
+  
+  li a {
+    display: block;
+    color: $color-white;
+    text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
+  }
 }
 
 .nav-lip {
@@ -61,28 +112,32 @@
   }
 }
 
-.nav-logo-link {
-  margin: 0.5rem 2rem 0.5rem 1.5rem;
-
-  @media #{$tablet-bp} {
-    grid-column: 3/4;
-    margin: 0 auto;
-    padding: 0.5rem 0;
-  }
-
-  @media #{$desktop-bp} {
-    margin: 0 4rem 1rem 4rem;
-    padding: 0;
-  }
-}
-
 .nav-logo {
   height: 3rem;
 
+  @media #{$tablet-bp} {
+    height: 3.5rem;
+  }
+  
   @media #{$desktop-bp} {
     display: block;
     margin: 0 auto;
     height: 4rem;
+  }
+
+  &-link {
+    margin: 0.5rem 2rem 0.5rem 1.5rem;
+  
+    @media #{$tablet-bp} {
+      grid-column: 3/4;
+      margin: 0 auto;
+      padding: 0.5rem 0;
+    }
+  
+    @media #{$desktop-bp} {
+      margin: 0 4rem 1rem 4rem;
+      padding: 0;
+    }
   }
 }
 
@@ -103,67 +158,10 @@
     margin: 1.75rem 4rem 1.5rem 0;
     color: $color-white;
   }
-}
 
-.title-logo span {
-  @media #{$tablet-bp} {
-    color: $color-black;
+  span {
+    @media #{$tablet-bp} {
+      color: $color-black;
+    }
   }
-}
-
-.nav-logo {
-  @media #{$tablet-bp} {
-    height: 3.5rem;
-  }
-}
-
-.nav-menu-button {
-  display: block;
-  height: 2rem;
-  margin: 1.125rem 1.5rem 0.5rem auto;
-
-  @media #{$tablet-bp} {
-    display: none;
-  }
-}
-
-.nav ul {
-  display: none;
-  list-style-type: none;
-
-  @media #{$tablet-bp} {
-    grid-column: 4 / span 2;
-    display: flex;
-    justify-content: end;
-    padding: 1.75rem 2rem 0 0;
-    font-size: 1.5rem;
-  }
-
-  @media #{$desktop-bp} {
-    grid-column: 4/6;
-    justify-content: flex-end;
-    padding: 1.75rem 0 1rem 0;
-  }
-}
-
-.nav li {
-  float: right;
-  text-transform: uppercase;
-  font-size: 0.75rem;
-
-  @media #{$tablet-bp} {
-    font-size: 60%;
-    padding-left: 1.25rem;
-  }
-
-  @media #{$desktop-bp} {
-    font-size: 1.125rem;
-    padding: 0 1.25rem;
-  }
-}
-
-.nav li a {
-  display: block;
-  color: $color-white;
-  text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
 }

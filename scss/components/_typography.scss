@@ -39,7 +39,6 @@
   @media #{$desktop-bp} {
     text-shadow: 0 0.25rem 0.25rem $color-shadow-header;
   }
-
 }
 
 .light-article-main-title {
@@ -67,94 +66,99 @@
 
 .article-item {
   line-height: 1.75rem;
-}
 
-.article-item-header {
-  margin: 1rem auto;
-  padding-top: 1rem;
-  font-size: 1.125rem;
-  text-transform: uppercase;
-  text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
-
-  @media #{$desktop-bp} {
-    margin-top: 0;
-    margin-bottom: 1.5rem;
-  }
-}
-
-.article-item-text {
-  margin: 1rem auto;
-  text-align: justify;
-  line-height: 2rem;
-
-  @media #{$tablet-bp} {
-    padding-left: 1rem;
-    padding-bottom: 1rem;
+  &-header {
+    margin: 1rem auto;
+    padding-top: 1rem;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
+  
+    @media #{$desktop-bp} {
+      margin-top: 0;
+      margin-bottom: 1.5rem;
+    }
   }
 
-  @media #{$desktop-bp} {
-    margin-bottom: 2rem;
-    padding-right: 4rem;
+  &-text {
+    margin: 1rem auto;
+    text-align: justify;
+    line-height: 2rem;
+  
+    @media #{$tablet-bp} {
+      padding-left: 1rem;
+      padding-bottom: 1rem;
+    }
+  
+    @media #{$desktop-bp} {
+      margin-bottom: 2rem;
+      padding-right: 4rem;
+    }
   }
-}
 
-.article-item-text-ender {
-  font-size: 1.125rem;
-  font-weight: 700;
+  &-text-ender {
+    font-size: 1.125rem;
+    font-weight: 700;
+  }
 }
 
 .comments-section-header {
   padding-bottom: 1rem;
   border-bottom: 1px solid $color-line-border;
-}
-.comments-section-header h3 {
-  text-transform: uppercase;
-  padding: 1rem 0 0.5rem 0;
-}
 
-.comments-section-header p {
-  color: $color-gray;
-  font-size: 0.9rem;
-}
+  h3 {
+    text-transform: uppercase;
+    padding: 1rem 0 0.5rem 0;
+  }
 
-.comment-card h4 {
-  font-size: 0.8rem;
-  color: $color-gray;
-}
-
-.comment-card p {
-  line-height: 1.5rem;
-  color: #272727;
-}
-
-.misc-section h3 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 1.125rem;
-  padding: 1rem 1rem;
-  background-color: $color-main;
-
-  @media #{$tablet-bp} {
+  p {
+    color: $color-gray;
     font-size: 0.9rem;
   }
+}
 
-  @media #{$desktop-bp} {
-    font-size: 1.125rem;
-    padding: 1.125rem 1rem;
+.comment-card {
+  h4 {
+    font-size: 0.8rem;
+    color: $color-gray;
+  }
+
+  p {
+    line-height: 1.5rem;
+    color: #272727;
   }
 }
 
-.misc-section h4 {
-  padding-top: 1rem;
-  padding-bottom: 0;
-
-  @media #{$tablet-bp} {
-    display: none;
+.misc-section {
+  h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    padding: 1rem 1rem;
+    background-color: $color-main;
+  
+    @media #{$tablet-bp} {
+      font-size: 0.9rem;
+    }
+  
+    @media #{$desktop-bp} {
+      font-size: 1.125rem;
+      padding: 1.125rem 1rem;
+    }
   }
 
-  @media #{$desktop-bp} {
-    display: block;
-    font-size: 1rem;
+  h4 {
+    padding-top: 1rem;
+    padding-bottom: 0;
+  
+    @media #{$tablet-bp} {
+      display: none;
+    }
+  
+    @media #{$desktop-bp} {
+      display: block;
+      font-size: 1rem;
+    }
   }
 }
 
@@ -167,15 +171,17 @@
   color: $color-gray;
 }
 
-.user-contribution-container h3 {
-  background-color: $color-white;
-  text-align: left;
-  font-size: 1rem;
-}
+.user-contribution-container {
+  h3 {
+    background-color: $color-white;
+    text-align: left;
+    font-size: 1rem;
+  }
 
-.user-contribution-container p {
-  margin: 1rem 1.5rem;
-  padding-top: 1rem;
+  p {
+    margin: 1rem 1.5rem;
+    padding-top: 1rem;
+  }
 }
 
 // ==================================================

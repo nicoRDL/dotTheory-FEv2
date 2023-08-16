@@ -29,21 +29,21 @@
   @media #{$desktop-bp} {
     font-size: 1.125rem;
   }
-}
 
-.table-item a {
-  color: $color-black;
-
-  &:hover {
-    color: $color-nav-browse_hover;
+  a {
+    color: $color-black;
+  
+    &:hover {
+      color: $color-nav-browse_hover;
+    }
   }
-}
 
-.table-item img {
-  width: 4rem;
-  margin: 0.8rem;
-
-  @media #{$desktop-bp} {
-    width: 5rem;
+  img {
+    width: 4rem;
+    margin: 0.8rem;
+  
+    @media #{$desktop-bp} {
+      width: 5rem;
+    }
   }
 }
