@@ -31,7 +31,7 @@
     box-shadow: none;
   }
 
-  &-menu-button {
+  &__menu-button {
     display: block;
     height: 2rem;
     margin: 1.125rem 1.5rem 0.5rem auto;
@@ -81,62 +81,62 @@
     color: $color-white;
     text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
   }
-}
 
-.nav-lip {
-  @media #{$desktop-bp} {
-    content: "";
-    grid-column: 1/-1;
-    z-index: -1;
-    height: 5rem;
-    width: 115rem;
-    position: absolute;
-    top: 0;
-    background: $color-main;
-    box-shadow: 0 0.25rem 0.5rem $color-nav-shadow-1;
-  }
-
-  &-browse {
-    display: none;
-
+  &-lip {
     @media #{$desktop-bp} {
-      display: block;
-      background: linear-gradient(to bottom, $color-nav-browse_hover, $color-main);
+      content: "";
+      grid-column: 1/-1;
+      z-index: -1;
+      height: 5rem;
+      width: 120rem;
+      position: absolute;
+      top: 0;
+      background: $color-main;
+      box-shadow: 0 0.25rem 0.5rem $color-nav-shadow-1;
+    }
+  
+    &-browse {
+      display: none;
+  
+      @media #{$desktop-bp} {
+        display: block;
+        background: linear-gradient(to bottom, $color-nav-browse_hover, $color-main);
+        box-shadow: none;
+      }
+    }
+  
+    &-home {
       box-shadow: none;
+      z-index: 0;
     }
   }
 
-  &-home {
-    box-shadow: none;
-    z-index: 0;
-  }
-}
-
-.nav-logo {
-  height: 3rem;
-
-  @media #{$tablet-bp} {
-    height: 3.5rem;
-  }
-  
-  @media #{$desktop-bp} {
-    display: block;
-    margin: 0 auto;
-    height: 4rem;
-  }
-
-  &-link {
-    margin: 0.5rem 2rem 0.5rem 1.5rem;
+  &__logo {
+    height: 3rem;
   
     @media #{$tablet-bp} {
-      grid-column: 3/4;
+      height: 3.5rem;
+    }
+    
+    @media #{$desktop-bp} {
+      display: block;
       margin: 0 auto;
-      padding: 0.5rem 0;
+      height: 4rem;
     }
   
-    @media #{$desktop-bp} {
-      margin: 0 4rem 1rem 4rem;
-      padding: 0;
+    &-link {
+      margin: 0.5rem 2rem 0.5rem 1.5rem;
+    
+      @media #{$tablet-bp} {
+        grid-column: 3/4;
+        margin: 0 auto;
+        padding: 0.5rem 0;
+      }
+    
+      @media #{$desktop-bp} {
+        margin: 0 4rem 1rem 4rem;
+        padding: 0;
+      }
     }
   }
 }

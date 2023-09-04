@@ -48,7 +48,7 @@
   font-size: 1.35rem;
 }
 
-.opening-para h3 {
+.opening-section__paragraph h3 {
   text-align: justify;
   font-size: inherit;
   text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
@@ -67,7 +67,7 @@
 .article-item {
   line-height: 1.75rem;
 
-  &-header {
+  &__header {
     margin: 1rem auto;
     padding-top: 1rem;
     font-size: 1.125rem;
@@ -80,7 +80,7 @@
     }
   }
 
-  &-text {
+  &__text {
     margin: 1rem auto;
     text-align: justify;
     line-height: 2rem;
@@ -96,7 +96,7 @@
     }
   }
 
-  &-text-ender {
+  &__text-ender {
     font-size: 1.125rem;
     font-weight: 700;
   }
@@ -117,7 +117,7 @@
   }
 }
 
-.comment-card {
+.user-comment__card {
   h4 {
     font-size: 0.8rem;
     color: $color-gray;
@@ -188,7 +188,7 @@
 // Browse Page
 // ==================================================
 
-.feature-article-card h2 {
+.featured-articles__card h2 {
   font-size: 1.25rem;
   padding: 1rem 0;
   text-align: left;
@@ -207,43 +207,47 @@
   }
 }
 
-.articles-container-header {
-  grid-column: 1/-1;
-  display: flex;
-  justify-content: center;
-  text-transform: uppercase;
-  font-size: 1.25rem;
-  margin: 1rem 0 2rem 0;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid $color-line-border;
-
-  @media #{$tablet-bp} {
-    border-bottom: none;
+.articles {
+  &-container-header {
+    grid-column: 1/-1;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    margin: 1rem 0 2rem 0;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid $color-line-border;
+  
+    @media #{$tablet-bp} {
+      border-bottom: none;
+    }
+  
+    @media #{$desktop-bp} {
+      font-size: 1.35rem;
+      margin: 0 0 3rem 0;
+    }
   }
 
-  @media #{$desktop-bp} {
-    font-size: 1.35rem;
-    margin: 0 0 3rem 0;
-  }
-}
-
-.article-card h3 {
-  text-transform: uppercase;
-  padding-bottom: 0.75rem;
-  color: $color-black;
-}
-
-.article-card h3:hover {
-  text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
-}
-
-.article-card p {
-  display: none;
-
-  @media #{$desktop-bp} {
-    display: block;
-    font-size: .9375rem;
-    margin-bottom: 1rem;
+  &__article-card {
+    h3 {
+      text-transform: uppercase;
+      padding-bottom: 0.75rem;
+      color: $color-black;
+  
+      &:hover {
+        text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
+      }
+    }
+  
+    p {
+      display: none;
+    
+      @media #{$desktop-bp} {
+        display: block;
+        font-size: .9375rem;
+        margin-bottom: 1rem;
+      }
+    }
   }
 }
 
@@ -274,59 +278,67 @@
   }
 }
 
-.recent-post-card h2 {
-  text-transform: uppercase;
-  padding-bottom: 1rem;
-  color: $color-black;
-  font-size: 1.35rem;
-}
-
-.recent-post-card p {
-  font-size: 1.125rem;
-}
-
-.about-author-section-header {
-  text-transform: uppercase;
-  text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
-  font-size: 1.625rem;
-  text-align: center;
-  margin: 2rem auto;
-
-  @media #{$desktop-bp} {
-    font-size: 2rem;
+.recent-post-card {
+  h2 {
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    color: $color-black;
+    font-size: 1.35rem;
   }
-}
 
-.about-author-section-body {
-  text-align: center;
-  line-height: 2rem;
-  color: $color-black;
-  font-size: 1.125rem;
-  margin: 1rem 0;
-
-  @media #{$desktop-bp} {
-    text-align: left;
-    line-height: 2.5rem;
-    font-size: 1.25rem;
-    margin: 2rem 0;
+  p {
+    font-size: 1.125rem;
   }
+
 }
 
-.author-name {
-  font-size: 1.125rem;
-  color: $color-gray;
-  text-transform: uppercase;
-  margin: 2rem 0 1rem 0;
-  padding-top: 1rem;
+.about-author-section {
+  &__header {
+    text-transform: uppercase;
+    text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
+    font-size: 1.625rem;
+    text-align: center;
+    margin: 2rem auto;
+  
+    @media #{$desktop-bp} {
+      font-size: 2rem;
+    }
+  }
 
-  @media #{$desktop-bp} {
-    font-size: 1.25rem;
-    margin: 4rem 0 1rem 0;
+  &__body {
+    text-align: center;
+    line-height: 2rem;
+    color: $color-black;
+    font-size: 1.125rem;
+    margin: 1rem 0;
+  
+    @media #{$desktop-bp} {
+      text-align: left;
+      line-height: 2.5rem;
+      font-size: 1.25rem;
+      margin: 2rem 0;
+    }
+  }
+
+}
+
+.author {
+  &__name {
+    font-size: 1.125rem;
+    color: $color-gray;
+    text-transform: uppercase;
+    margin: 2rem 0 1rem 0;
     padding-top: 1rem;
+  
+    @media #{$desktop-bp} {
+      font-size: 1.25rem;
+      margin: 4rem 0 1rem 0;
+      padding-top: 1rem;
+    }
   }
-}
 
-.author-description {
-  text-align: left;
-  line-height: 1.5rem;
+  &__description {
+    text-align: left;
+    line-height: 1.5rem;
+  }
 }
