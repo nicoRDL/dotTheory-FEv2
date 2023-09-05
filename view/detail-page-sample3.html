@@ -4,19 +4,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>Sample Detail Page 2 - Clacks & Thocc</title>
   </head>
   <body>
-    <div class="nav-lip"></div>
     <nav class="nav">
       <a class="title-logo" href="index.html">
         Clacks&
         <span>Thocc</span>
       </a>
-      <a class="nav-logo-link" href="index.html">
+      <a class="nav__logo-link" href="index.html">
         <img
-          class="nav-logo"
+          class="nav__logo"
           src="../images/keyboard-logo.png"
           alt="colored keyboard logo"
         />
@@ -33,7 +32,13 @@
           </a>
         </li>
       </ul>
+      <img
+        class="nav__menu-button"
+        src="../images/burger-menu.png"
+        alt="menu button"
+      />
     </nav>
+    <div class="nav__lip"></div>
     <aside class="category-tag recentpost-tag">
       <h2>Category: RECENT POSTS</h2>
     </aside>
@@ -42,7 +47,7 @@
         <h1 class="article-page-main-title">
           Typing adjustment and how to make it easier
         </h1>
-        <div class="opening-para">
+        <div class="opening-section__paragraph">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
@@ -65,8 +70,8 @@
       </section>
       <main class="main-content">
         <div class="article-item">
-          <h2 class="article-item-header">Lorem Ipsum</h2>
-          <p class="article-item-text">
+          <h2 class="article-item__header">Lorem Ipsum</h2>
+          <p class="article-item__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
             nunc sed blandit libero volutpat sed cras ornare arcu. Cras sed
@@ -85,7 +90,7 @@
             feugiat nibh. Risus pretium quam vulputate dignissim suspendisse in
             est ante in. Sit amet nulla facilisi morbi tempus.
           </p>
-          <p class="article-item-text">
+          <p class="article-item__text">
             Dictumst quisque sagittis purus sit amet volutpat consequat mauris.
             Nulla aliquet enim tortor at auctor. Nisi porta lorem mollis
             aliquam. Elementum tempus egestas sed sed. Sodales neque sodales ut
@@ -125,8 +130,8 @@
           </p>
         </div>
         <div class="article-item">
-          <h3 class="article-item-header">Conclusion</h3>
-          <p class="article-item-text">
+          <h3 class="article-item__header">Conclusion</h3>
+          <p class="article-item__text">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis
             nunc sed blandit libero volutpat sed cras ornare arcu. Cras sed
@@ -146,25 +151,25 @@
             est ante in. Sit amet nulla facilisi morbi tempus.
           </p>
           <img
-            class="article-item-img"
+            class="article-item__img"
             src="../images/customizable1.jpg"
             alt="Pressing Multiple keys"
           />
-          <p class="article-item-text-ender">Go on, Size up!</p>
+          <p class="article-item__text-ender">Go on, Size up!</p>
         </div>
         <section class="comments-section">
-          <div class="comments-section-header">
+          <div class="comments-section__header">
             <h3>Start a Discussion</h3>
             <p>Informative article? Leave a comment down below!</p>
           </div>
-          <div class="user-comment-container">
+          <div class="user-comment__container">
             <img
               class="user-img"
               src="../images/user.png"
               alt="user profile image"
             />
             <textarea
-              class="comment-textarea"
+              class="user-comment__textarea"
               name="comment-box"
               id="comment-box"
               cols="63"
@@ -173,7 +178,7 @@
             ></textarea>
             <button class="comment__button">Comment</button>
           </div>
-          <div class="comment-card">
+          <div class="user-comment__card">
             <img
               class="user-img"
               src="../images/user.png"
@@ -185,7 +190,7 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div class="comment-card">
+          <div class="user-comment__card">
             <img
               class="user-img"
               src="../images/user.png"
@@ -197,7 +202,7 @@
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
-          <div class="comment-card">
+          <div class="user-comment__card">
             <img
               class="user-img"
               src="../images/user.png"

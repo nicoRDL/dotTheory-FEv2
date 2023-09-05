@@ -1,0 +1,22 @@
+.category-tag {
+  display: inline-block;
+  opacity: 80%;
+  margin: 1rem 3rem 0 0;
+  padding: 1rem;
+  background-color: $color-main;
+  color: $color-white;
+
+  @media #{$desktop-bp} {
+    position: sticky;
+    top: 1rem;
+    opacity: 100%;
+  }
+}
+
+.recentpost-tag {
+  background-color: $color-nav--browse_hover;
+}
+
+.regular-article-tag {
+  background-color: #004080;
+}

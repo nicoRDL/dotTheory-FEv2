@@ -1,0 +1,96 @@
+.buttons-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+
+.comment-button {
+  width: 10rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  margin: 0;
+
+  &:hover {
+    background-color: $color-main;
+    border: none;
+    color: $color-white;
+  }
+
+  @media #{$desktop-bp} {
+    width: 15rem;
+    padding: 0.5rem;
+    margin: 0;
+  }
+}
+
+.form-buttons {
+  width: 10rem;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0.5rem;
+
+  &:hover {
+    background-color: $color-main;
+    border: none;
+    color: $color-white;
+  }
+}
+
+.articles {
+  &__article-card-expand-btn {
+    background-color: $color-white;
+    border: none;
+    margin-top: 0.75rem;
+    padding-left: 0;
+    color: #4b4b4b;
+    text-transform: uppercase;
+    font-size: .75rem;
+  
+    @media #{$desktop-bp} {
+      margin-top: 1rem;
+    }
+  
+    &:hover {
+      color: $color-nav--browse_hover;
+    }
+  }
+
+  &-section__expand-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 1rem;
+    width: 10.5rem;
+    text-align: center;
+    background-color: #f2f2f2;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 0.5px solid $color-black;
+    margin: 0 auto;
+    color: $color-black;
+    text-transform: uppercase;
+    font-size: .8rem;
+  
+    @media #{$tablet-bp} {
+      width: 14rem;
+      font-size: 1rem;
+      margin: 1rem auto;
+    }
+  
+    @media #{$desktop-bp} {
+      width: 18rem;
+      height: 3rem;
+      font-size: 1.25rem;
+      margin-top: 2rem;
+    }
+  
+    &:hover {
+      background-color: $color-main;
+      color: $color-white;
+      border: none;
+    }
+  }
+}
