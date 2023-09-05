@@ -102,7 +102,7 @@
   }
 }
 
-.comments-section-header {
+.comments-section__header {
   padding-bottom: 1rem;
   border-bottom: 1px solid $color-line-border;
 
@@ -114,18 +114,6 @@
   p {
     color: $color-gray;
     font-size: 0.9rem;
-  }
-}
-
-.user-comment__card {
-  h4 {
-    font-size: 0.8rem;
-    color: $color-gray;
-  }
-
-  p {
-    line-height: 1.5rem;
-    color: #272727;
   }
 }
 
@@ -208,7 +196,7 @@
 }
 
 .articles {
-  &-container-header {
+  &__container-header {
     grid-column: 1/-1;
     display: flex;
     justify-content: center;
@@ -254,10 +242,6 @@
 // ==================================================
 // Home Page
 // ==================================================
-
-.category-container h2 {
-  font-size: 1.875rem;
-}
 
 .category-header {
   font-size: 2.2rem;

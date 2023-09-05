@@ -29,7 +29,7 @@
   padding-bottom: 2rem;
   border-bottom: 1px solid $color-line-border;
 
-  &-browse {
+  &--browse {
     border-bottom: none;
     padding-bottom: 1rem;
   }
@@ -104,7 +104,7 @@
 }
 
 .user-comment {
-  &-container {
+  &__container {
     margin: 0;
 
     @media #{$tablet-bp} {
@@ -132,6 +132,16 @@
   
     @media #{$desktop-bp} {
       margin-top: 3rem;
+    }
+
+    h4 {
+      font-size: 0.8rem;
+      color: $color-gray;
+    }
+  
+    p {
+      line-height: 1.5rem;
+      color: #272727;
     }
   }
 }
@@ -185,7 +195,7 @@
   }
 
   a:hover {
-    color: $color-nav-browse_hover;
+    color: $color-nav--browse_hover;
   }
 }
 
@@ -321,13 +331,13 @@
     }
     
     a:hover {
-      color: $color-nav-browse_hover;
+      color: $color-nav--browse_hover;
     }
   }
 }
 
 .articles {
-  &-container {
+  &__container {
     grid-column: 1/-1;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -367,11 +377,11 @@
     }
   
     &:hover {
-      border-left: 0.75rem solid $color-nav-browse_hover;
+      border-left: 0.75rem solid $color-nav--browse_hover;
   
       @media #{$desktop-bp} {
         border-left: none;
-        border-bottom: 0.125rem solid $color-nav-browse_hover;
+        border-bottom: 0.125rem solid $color-nav--browse_hover;
       }
     }
   }
@@ -382,7 +392,7 @@
 // ==================================================
 
 .categories {
-  &-section {
+  &__section {
     grid-column: 1/-1;
     margin: 2rem auto;
     border-bottom: none;
@@ -399,7 +409,7 @@
     }
   }
 
-  &-container {
+  &__container {
     display: flex;
     flex-direction: column;
     min-width: 27rem;
@@ -412,7 +422,7 @@
 }
 
 .category {
-  &-container {
+  &__container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -435,6 +445,10 @@
   
     @media #{$desktop-bp} {
       background-size: 200%;
+    }
+
+    h2 {
+      font-size: 1.875rem;
     }
   
     &:hover {

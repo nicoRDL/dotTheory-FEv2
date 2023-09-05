@@ -22,12 +22,12 @@
     box-shadow: none;
   }
 
-  &-browse {
-    background: linear-gradient(to bottom, $color-nav-browse_hover, $color-main);
+  &--browse {
+    background: linear-gradient(to bottom, $color-nav--browse_hover, $color-main);
     box-shadow: none;
   }
 
-  &-homepage {
+  &--homepage {
     box-shadow: none;
   }
 
@@ -82,7 +82,7 @@
     text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
   }
 
-  &-lip {
+  &__lip {
     @media #{$desktop-bp} {
       content: "";
       grid-column: 1/-1;
@@ -95,17 +95,17 @@
       box-shadow: 0 0.25rem 0.5rem $color-nav-shadow-1;
     }
   
-    &-browse {
+    &--browse {
       display: none;
   
       @media #{$desktop-bp} {
         display: block;
-        background: linear-gradient(to bottom, $color-nav-browse_hover, $color-main);
+        background: linear-gradient(to bottom, $color-nav--browse_hover, $color-main);
         box-shadow: none;
       }
     }
   
-    &-home {
+    &--home {
       box-shadow: none;
       z-index: 0;
     }
@@ -123,20 +123,20 @@
       margin: 0 auto;
       height: 4rem;
     }
+  }
+
+  &__logo-link {
+    margin: 0.5rem 2rem 0.5rem 1.5rem;
   
-    &-link {
-      margin: 0.5rem 2rem 0.5rem 1.5rem;
-    
-      @media #{$tablet-bp} {
-        grid-column: 3/4;
-        margin: 0 auto;
-        padding: 0.5rem 0;
-      }
-    
-      @media #{$desktop-bp} {
-        margin: 0 4rem 1rem 4rem;
-        padding: 0;
-      }
+    @media #{$tablet-bp} {
+      grid-column: 3/4;
+      margin: 0 auto;
+      padding: 0.5rem 0;
+    }
+  
+    @media #{$desktop-bp} {
+      margin: 0 4rem 1rem 4rem;
+      padding: 0;
     }
   }
 }

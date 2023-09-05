@@ -54,11 +54,11 @@
     }
   
     &:hover {
-      color: $color-nav-browse_hover;
+      color: $color-nav--browse_hover;
     }
   }
 
-  &-section-expand-btn {
+  &-section__expand-btn {
     display: flex;
     justify-content: center;
     align-items: center;
