@@ -1,17 +1,58 @@
 .feature-img {
   display: block;
-  max-width: 90%;
-  margin: 2rem auto;
-  box-shadow: 0 0.5rem 0.5rem #bebebe;
-
-  @media #{$tablet-bp} {
-    margin: 3rem auto;
-  }
+  position: relative;
 
   @media #{$desktop-bp} {
     grid-column: 11/-1;
+    margin-top: 1rem;
+  }
+
+  img {
+    display: block;
     max-width: 100%;
-    margin-top: 0.5rem;
+    margin: 2rem auto;
+    box-shadow: 0 0.5rem 0.5rem #bebebe;
+  
+    @media #{$tablet-bp} {
+      margin: 3rem auto;
+    }
+  
+    @media #{$desktop-bp} {
+      max-width: 100%;
+      margin: 0;
+    }
+  }
+
+  &--overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0; 
+    left: 0;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: $color-black;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+    font-size: 1.25rem;
+    line-height: 2rem;
+    text-align: center;
+
+    @media #{$tablet-bp} {
+      margin: 0 auto;
+    }
+
+    @media #{$desktop-bp} {
+      margin-bottom: 2.5rem;
+    }
+
+    &:hover {
+      opacity: 0.8;
+      color: $color-white;
+    }
   }
 }
 
@@ -19,7 +60,8 @@
   display: block;
   width: 90%;
   margin: 1rem auto;
-  box-shadow: 0.5rem 0.5rem 1rem #dbdbdb;
+  box-shadow: 0.5rem 0.5rem .5rem #dbdbdb;
+  transition: box-shadow 0.3s ease-out;
 
   @media #{$tablet-bp} {
     display: block;
@@ -29,6 +71,10 @@
   @media #{$desktop-bp} {
     grid-column: 2/12;
     margin: 1rem 0 2rem 0;
+  }
+
+  &:hover {
+    box-shadow: 0.5rem 0.5rem 1rem $color-main;
   }
 }
 
@@ -71,6 +117,7 @@
   max-width: 15rem;
   margin: 0 auto;
   align-items: center;
+  transition: transform 0.3s, box-shadow 0.2s ease-in-out;
 
   @media #{$tablet-bp} {
     max-width: inherit;
@@ -83,7 +130,7 @@
 
     &:hover {
       box-shadow: 0.25rem 0.25rem 0.25rem #4b4b4b;
-      transition: box-shadow 0.2s ease-in-out;
+      transform: scale(1.05);
     }
   }
 }
@@ -103,6 +150,11 @@
 
 .recent-post-img {
   display: none;
+  transition: transform 0.5s;
+
+  &:hover {
+    transform: scale(1.15);
+  }
 
   @media #{$tablet-bp} {
     display: block;
@@ -129,4 +181,9 @@
     float: left;
     max-width: 10rem;
   }
+}
+
+.about-page-section img {
+  width: 100%;
+  margin: 0 auto;
 }
