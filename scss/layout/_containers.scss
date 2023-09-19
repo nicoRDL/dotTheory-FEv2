@@ -591,11 +591,11 @@
       background: linear-gradient(to bottom, $color-main, $color-white);
     }
 
-    &-content {
+    &__content {
       transition: opacity 0.8s 0s;
     }
 
-    &:hover > &-content {
+    &:hover > &__content {
       opacity: 1;
     }
   }

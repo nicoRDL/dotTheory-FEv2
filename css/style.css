@@ -383,21 +383,21 @@ a:hover {
   }
 }
 
-.author-card-content {
+.author-card__content {
   opacity: 0;
 }
-.author-card-content__name {
+.author-card__content-name {
   font-size: 1.125rem;
   color: #808080;
   text-transform: uppercase;
   margin: 1rem 0;
 }
 @media (min-width: 64rem) {
-  .author-card-content__name {
+  .author-card__content-name {
     font-size: 1.25rem;
   }
 }
-.author-card-content__description {
+.author-card__content-description {
   text-align: left;
   line-height: 1.5rem;
 }
@@ -1603,10 +1603,10 @@ footer:hover {
 .author-card:hover {
   background: linear-gradient(to bottom, #8ed1fc, #ffffff);
 }
-.author-card-content {
+.author-card__content {
   transition: opacity 0.8s 0s;
 }
-.author-card:hover > .author-card-content {
+.author-card:hover > .author-card__content {
   opacity: 1;
 }
 

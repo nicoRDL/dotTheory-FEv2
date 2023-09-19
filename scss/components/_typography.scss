@@ -371,23 +371,22 @@
   }
 }
 
-.author-card {
-  &-content {
-    opacity: 0;
-    &__name {
-      font-size: 1.125rem;
-      color: $color-gray;
-      text-transform: uppercase;
-      margin: 1rem 0;
-    
-      @media #{$desktop-bp} {
-        font-size: 1.25rem;
-      }
-    }
+.author-card__content {
+  opacity: 0;
+
+  &-name {
+    font-size: 1.125rem;
+    color: $color-gray;
+    text-transform: uppercase;
+    margin: 1rem 0;
   
-    &__description {
-      text-align: left;
-      line-height: 1.5rem;
+    @media #{$desktop-bp} {
+      font-size: 1.25rem;
     }
+  }
+
+  &-description {
+    text-align: left;
+    line-height: 1.5rem;
   }
 }
