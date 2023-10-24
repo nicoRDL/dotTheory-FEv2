@@ -5,4 +5,10 @@
   font-size: 0.875rem;
   text-transform: uppercase;
   margin: 3rem auto 1rem auto;
+  transition: color 0.2s ease-in, background 0.3s ease-in-out;
+}
+
+footer:hover {
+  background: $color-main;
+  color: $color-black;
 }

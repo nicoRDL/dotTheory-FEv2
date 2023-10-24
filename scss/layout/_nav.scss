@@ -31,6 +31,11 @@
     box-shadow: none;
   }
 
+  &--about {
+    box-shadow: none;
+    background: $color-nav-shadow-1;
+  }
+
   &__menu-button {
     display: block;
     height: 2rem;
@@ -74,12 +79,18 @@
       font-size: 1.125rem;
       padding: 0 1.25rem;
     }
-  }
-  
-  li a {
-    display: block;
-    color: $color-white;
-    text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
+
+    a {
+      display: block;
+      color: $color-white;
+      text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
+      transition: color 0.2s ease-in;
+
+      &:hover {
+        color: $color-nav-shadow-1;
+        text-shadow: 0 0.1rem 0.1rem $color-nav--browse_hover;
+      }
+    }
   }
 
   &__lip {
@@ -88,7 +99,7 @@
       grid-column: 1/-1;
       z-index: -1;
       height: 5rem;
-      width: 120rem;
+      width: 100%;
       position: absolute;
       top: 0;
       background: $color-main;
@@ -109,10 +120,21 @@
       box-shadow: none;
       z-index: 0;
     }
+
+    &--about {
+      box-shadow: none;
+      //background: linear-gradient(to bottom, $color-nav-shadow-1, $color-nav-shadow-2);
+      background: $color-nav-shadow-1;
+    }
   }
 
   &__logo {
     height: 3rem;
+    transition: transform 0.2s ease-out;
+
+    &:hover {
+      transform: rotate(15deg);
+    }
   
     @media #{$tablet-bp} {
       height: 3.5rem;

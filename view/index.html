@@ -8,37 +8,38 @@
     <title>Clacks & Thocc - Home Page</title>
   </head>
   <body>
-    <nav class="nav nav--homepage">
-      <a class="title-logo" href="index.html">
-        Clacks&
-        <span>Thocc</span>
-      </a>
-      <a class="nav__logo-link" href="index.html">
+    <header>
+      <nav class="nav nav--homepage">
+        <a class="title-logo" href="index.html">
+          Clacks&
+          <span>Thocc</span>
+        </a>
+        <a class="nav__logo-link" href="index.html">
+          <img
+            class="nav__logo"
+            src="../images/keyboard-logo.png"
+            alt="colored keyboard logo"
+          />
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="browse-page.html">Articles</a></li>
+          <li>
+            <a
+              href="about-page.html"
+            >
+              About Us
+            </a>
+          </li>
+        </ul>
         <img
-          class="nav__logo"
-          src="../images/keyboard-logo.png"
-          alt="colored keyboard logo"
+          class="nav__menu-button"
+          src="../images/burger-menu.png"
+          alt="menu button"
         />
-      </a>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="browse-page.html">Articles</a></li>
-        <li>
-          <a
-            href="https://www.codeandtheory.com/location/manila"
-            target="_blank"
-          >
-            About Us
-          </a>
-        </li>
-      </ul>
-      <img
-        class="nav__menu-button"
-        src="../images/burger-menu.png"
-        alt="menu button"
-      />
-    </nav>
-    <div class="nav__lip nav__lip--home"></div>
+      </nav>
+      <div class="nav__lip nav__lip--home"></div>
+    </header>
     <div class="grid-container">
       <section class="categories__section">
         <h1 id="main-title" class="homepage-header">CLACKS & THOCC</h1>
@@ -135,7 +136,7 @@
         </button> 
       </section>
       <section class="about-author-section">
-        <h2 class="about-author-section__header">Clacks & Thocc</h2>
+        <h2 class="about-author-section__header">So Who's Clickin' Clackin"</h2>
         <p class="about-author-section__body">
           Clacks & Thocc is basically a "Heavily Inspired" online media
           platform, similar to how China copies every tech giant and sell them
@@ -144,15 +145,9 @@
           are determined to give professional content to all enthusiast, both
           new and broke.
         </p>
-        <div class="author-card">
-          <img src="../images/user.png" alt="author photo" />
-          <h2 class="author__name">Main Author</h2>
-          <p class="author__description">
-            Author is the primary contributor to the site, both content and
-            structure. Author is growing enthusiast for custom builds and
-            modding.
-          </p>
-        </div>
+        <button class="about-section__expand-btn" onclick="window.location.href= 'about-page.html'">
+          Learn More About Us
+        </button> 
       </section>
     </div>
     <footer class="footer">
