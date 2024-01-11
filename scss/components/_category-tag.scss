@@ -3,8 +3,8 @@
   opacity: 80%;
   margin: 1rem 3rem 0 0;
   padding: 1rem;
-  background-color: $color-main;
-  color: $color-white;
+  background-color: var(--color-main);
+  color: var(--color-white);
 
   @media #{$desktop-bp} {
     position: sticky;
@@ -14,7 +14,7 @@
 }
 
 .recentpost-tag {
-  background-color: $color-nav--browse_hover;
+  background-color: var(--color-nav--browse_hover);
 }
 
 .regular-article-tag {

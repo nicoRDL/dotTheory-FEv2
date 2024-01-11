@@ -24,7 +24,7 @@
 .homepage-header {
   @media #{$desktop-bp} {
     font-size: 2rem;
-    text-shadow: 0 0.25rem 0.25rem $color-shadow-header;
+    text-shadow: 0 0.25rem 0.25rem var(--color-shadow-header);
   }
 }
 
@@ -37,7 +37,7 @@
   font-weight: 900;
 
   @media #{$desktop-bp} {
-    text-shadow: 0 0.25rem 0.25rem $color-shadow-header;
+    text-shadow: 0 0.25rem 0.25rem var(--color-shadow-header);
   }
 }
 
@@ -51,7 +51,7 @@
 .opening-section__paragraph h3 {
   text-align: justify;
   font-size: inherit;
-  text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
+  text-shadow: 0 0.1rem 0.1rem var(--color-shadow-header);
   margin: 1.5rem 0;
 
   @media #{$tablet-bp} {
@@ -72,7 +72,7 @@
     padding-top: 1rem;
     font-size: 1.125rem;
     text-transform: uppercase;
-    text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
+    text-shadow: 0 0.1rem 0.1rem var(--color-shadow-header);
   
     @media #{$desktop-bp} {
       margin-top: 0;
@@ -104,7 +104,7 @@
 
 .comments-section__header {
   padding-bottom: 1rem;
-  border-bottom: 1px solid $color-line-border;
+  border-bottom: 1px solid var(--color-line-border);
 
   h3 {
     text-transform: uppercase;
@@ -112,7 +112,7 @@
   }
 
   p {
-    color: $color-gray;
+    color: var(--color-gray);
     font-size: 0.9rem;
   }
 }
@@ -123,7 +123,7 @@
     text-transform: uppercase;
     font-size: 1.125rem;
     padding: 1rem 1rem;
-    background-color: $color-main;
+    background-color: var(--color-main);
   
     @media #{$tablet-bp} {
       font-size: 0.9rem;
@@ -156,12 +156,12 @@
   text-transform: uppercase;
   font-weight: 700;
   font-size: 1rem;
-  color: $color-gray;
+  color: var(--color-gray);
 }
 
 .user-contribution-container {
   h3 {
-    background-color: $color-white;
+    background-color: var(--color-white);
     text-align: left;
     font-size: 1rem;
   }
@@ -204,7 +204,7 @@
     font-size: 1.25rem;
     margin: 1rem 0 2rem 0;
     padding-bottom: 1rem;
-    border-bottom: 1px solid $color-line-border;
+    border-bottom: 1px solid var(--color-line-border);
   
     @media #{$tablet-bp} {
       border-bottom: none;
@@ -220,10 +220,10 @@
     h3 {
       text-transform: uppercase;
       padding-bottom: 0.75rem;
-      color: $color-black;
+      color: var(--color-black);
   
       &:hover {
-        text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
+        text-shadow: 0 0.1rem 0.1rem var(--color-shadow-header);
       }
     }
   
@@ -245,7 +245,7 @@
 
 .category-header {
   font-size: 2.2rem;
-  text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
+  text-shadow: 0 0.1rem 0.1rem var(--color-shadow-header);
   transition: color 0.5s;
 }
 
@@ -266,7 +266,7 @@
   h2 {
     text-transform: uppercase;
     padding-bottom: 1rem;
-    color: $color-black;
+    color: var(--color-black);
     font-size: 1.35rem;
   }
 
@@ -279,7 +279,7 @@
 .about-author-section {
   &__header {
     text-transform: uppercase;
-    text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
+    text-shadow: 0 0.1rem 0.1rem var(--color-shadow-header);
     font-size: 1.625rem;
     text-align: center;
     margin: 2rem auto;
@@ -292,7 +292,7 @@
   &__body {
     text-align: center;
     line-height: 2rem;
-    color: $color-black;
+    color: var(--color-black);
     font-size: 1.125rem;
     margin: 1rem 0;
   
@@ -321,7 +321,7 @@
 
     &:hover {
       transform: scale(1.5);
-      text-shadow: 0.125rem 0.25rem 0.5rem $color-nav-shadow-1;
+      text-shadow: 0.125rem 0.25rem 0.5rem var(--color-nav-shadow-1);
     }
   }
 
@@ -336,12 +336,12 @@
     @media #{$desktop-bp} {
       line-height: 3rem;
       font-size: 1.5rem;
-      text-shadow: 0 0.125rem 0.25rem $color-shadow-header;
+      text-shadow: 0 0.125rem 0.25rem var(--color-shadow-header);
       margin: 5rem 0;
 
       &:hover {
         opacity: 1;
-        text-shadow: 0 0.125rem 0.125rem $color-nav-shadow-2;
+        text-shadow: 0 0.125rem 0.125rem var(--color-nav-shadow-2);
       }
     }
   }
@@ -362,31 +362,11 @@
   @media #{$desktop-bp} {
     font-size: 2rem;
     padding: 2rem 0 1rem 0;
-    border-top: 1px solid $color-line-border;
+    border-top: 1px solid --color-line-border;
     transition: text-shadow 0.5s;
 
     &:hover {
-      text-shadow: 0.125rem 0.25rem 0.5rem $color-nav-shadow-1;
+      text-shadow: 0.125rem 0.25rem 0.5rem --color-nav-shadow-1;
     }
-  }
-}
-
-.author-card__content {
-  opacity: 0;
-
-  &-name {
-    font-size: 1.125rem;
-    color: $color-gray;
-    text-transform: uppercase;
-    margin: 1rem 0;
-  
-    @media #{$desktop-bp} {
-      font-size: 1.25rem;
-    }
-  }
-
-  &-description {
-    text-align: left;
-    line-height: 1.5rem;
   }
 }

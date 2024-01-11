@@ -16,7 +16,7 @@
   align-items: center;
   border-bottom: 1px solid black;
   font-size: 1rem;
-  text-shadow: 0 0.1rem 0.1rem $color-shadow-header;
+  text-shadow: 0 0.1rem 0.1rem var(--color-shadow-header);
 
   @media #{$tablet-bp} {
     display: flex;
@@ -31,10 +31,10 @@
   }
 
   a {
-    color: $color-black;
+    color: var(--color-black);
   
     &:hover {
-      color: $color-nav--browse_hover;
+      color: var(--color-nav--browse_hover);
     }
   }
 

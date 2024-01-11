@@ -6,7 +6,7 @@
   display: grid;
   grid-template-columns: repeat(10, 1fr);
   max-width: 42rem;
-  background-color: $color-white;
+  background-color: var(--color-white);
   margin: 0 auto;
   padding: 0 2rem;
 
@@ -27,7 +27,7 @@
   grid-column: 1/-1;
   text-align: left;
   padding-bottom: 2rem;
-  border-bottom: 1px solid $color-line-border;
+  border-bottom: 1px solid var(--color-line-border);
 
   &--browse {
     border-bottom: none;
@@ -37,7 +37,7 @@
   @media #{$tablet-bp} {
     display: block;
     padding-bottom: 2rem;
-    border-bottom: 1px solid $color-line-border;
+    border-bottom: 1px solid var(--color-line-border);
   }
 
   @media #{$desktop-bp} {
@@ -79,7 +79,7 @@
   @media #{$desktop-bp} {
     grid-column: 2/13;
     width: 95%;
-    border-right: 1px solid $color-line-border;
+    border-right: 1px solid var(--color-line-border);
     margin: 3rem 0 5rem 0;
   }
 }
@@ -128,7 +128,7 @@
   &__card {
     margin-top: 4rem;
     padding-top: 2rem;
-    border-top: 1px solid $color-line-border;
+    border-top: 1px solid var(--color-line-border);
   
     @media #{$desktop-bp} {
       margin-top: 3rem;
@@ -136,7 +136,7 @@
 
     h4 {
       font-size: 0.8rem;
-      color: $color-gray;
+      color: var(--color-gray);
     }
   
     p {
@@ -186,7 +186,7 @@
 
     @media #{$tablet-bp} {
       font-size: 0.875rem;
-      border-bottom: 1px solid $color-line-border;
+      border-bottom: 1px solid var(--color-line-border);
     }
 
     @media #{$desktop-bp} {
@@ -195,7 +195,7 @@
   }
 
   a:hover {
-    color: $color-nav--browse_hover;
+    color: var(--color-nav--browse_hover);
   }
 }
 
@@ -284,7 +284,7 @@
   }
   
   input:focus {
-    background: $color-nav-shadow-1;
+    background: var(--color-nav-shadow-1);
   }
 
   .pitch-input {
@@ -336,7 +336,7 @@
     }
     
     a:hover {
-      color: $color-nav--browse_hover;
+      color: var(--color-nav--browse_hover);
     }
   }
 }
@@ -356,7 +356,7 @@
   
     @media #{$desktop-bp} {
       grid-column: 2/13;
-      border-right: 1px solid $color-line-border;
+      border-right: 1px solid var(--color-line-border);
       margin-top: 4rem;
       padding-top: 1rem;
     }
@@ -378,15 +378,15 @@
       margin: 2rem 2rem 1rem 0;
       padding: 0 0 1.5rem 0;
       border-left: none;
-      border-bottom: 1px solid $color-line-border;
+      border-bottom: 1px solid var(--color-line-border);
     }
   
     &:hover {
-      border-left: 0.75rem solid $color-nav--browse_hover;
+      border-left: 0.75rem solid var(--color-nav--browse_hover);
   
       @media #{$desktop-bp} {
         border-left: none;
-        border-bottom: 0.125rem solid $color-nav--browse_hover;
+        border-bottom: 0.125rem solid var(--color-nav--browse_hover);
       }
     }
   }
@@ -404,7 +404,7 @@
   
     @media #{$tablet-bp} {
       padding: 1.5rem 0 4rem 0;
-      border-bottom: 1px solid $color-line-border;
+      border-bottom: 1px solid var(--color-line-border);
     }
   
     @media #{$desktop-bp} {
@@ -432,14 +432,14 @@
     justify-content: center;
     align-items: center;
     margin: 1rem auto;
-    color: $color-white;
-    background-color: $color-line-border;
+    color: var(--color-white);
+    background-color: var(--color-line-border);
     width: 27rem;
     max-width: 40rem;
     height: 18rem;
     background-size: 150%;
     overflow: hidden;
-    box-shadow: 0.25rem 0.5rem 0.5rem $color-line-border;
+    box-shadow: 0.25rem 0.5rem 0.5rem var(--color-line-border);
     transition: opacity 0.5s, background-size 0.5s;
   
     @media #{$tablet-bp} {
@@ -459,7 +459,7 @@
     &:hover {
       opacity: 0.8;
       background-size: 135%;
-      color: $color-black;
+      color: var(--color-black);
     }
   }
 }
@@ -526,7 +526,7 @@
   display: block;
   margin: 2rem auto;
   padding-bottom: 4rem;
-  border-bottom: 1px solid $color-line-border;
+  border-bottom: 1px solid var(--color-line-border);
 
   @media #{$tablet-bp} {
     display: flex;
@@ -545,11 +545,11 @@
 .about-author-section {
   grid-column: 1/-1;
   margin: 2rem 0;
-  border-top: 1px solid $color-line-border;
+  border-top: 1px solid var(--color-line-border);
 
   @media #{$desktop-bp} {
     padding: 4rem 9rem 0 9rem;
-    border-top: 1px solid $color-line-border;
+    border-top: 1px solid var(--color-line-border);
   }
 }
 
@@ -588,11 +588,29 @@
     }
 
     &:hover {
-      background: linear-gradient(to bottom, $color-main, $color-white);
+      background: linear-gradient(to bottom, var(--color-main), var(--color-white));
     }
 
     &__content {
       transition: opacity 0.8s 0s;
+
+      opacity: 0;
+  
+      &-name {
+        font-size: 1.125rem;
+        color: var(--color-gray);
+        text-transform: uppercase;
+        margin: 1rem 0;
+      
+        @media #{$desktop-bp} {
+          font-size: 1.25rem;
+        }
+      }
+    
+      &-description {
+        text-align: left;
+        line-height: 1.5rem;
+      }
     }
 
     &:hover > &__content {

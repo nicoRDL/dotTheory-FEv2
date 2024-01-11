@@ -1,4 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400&display=swap");
+:root {
+  --color-main: #8ed1fc;
+  --color-nav--browse_hover: #007af3;
+  --color-nav-shadow-1: #ffea00;
+  --color-nav-shadow-2: #ffff99;
+  --color-shadow-header: #c2c2c2;
+  --color-line-border: #cccccc;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #808080;
+}
 
 html,
 body,
@@ -27,6 +38,6 @@ body {
 
 a {
   &:hover {
-    color: $color-nav--browse_hover;
+    color: var(--color-nav--browse_hover);
   }
 }

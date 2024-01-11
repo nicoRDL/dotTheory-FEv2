@@ -1,5 +1,5 @@
 .footer {
-  color: $color-gray;
+  color: var(--color-gray);
   text-align: center;
   font-weight: 700;
   font-size: 0.875rem;
@@ -9,6 +9,6 @@
 }
 
 footer:hover {
-  background: $color-main;
-  color: $color-black;
+  background: var(--color-main);
+  color: var(--color-black);
 }

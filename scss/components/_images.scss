@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: $color-black;
+    background: var(--color-black);
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
 
@@ -51,7 +51,7 @@
 
     &:hover {
       opacity: 0.8;
-      color: $color-white;
+      color: var(--color-white);
     }
   }
 }
@@ -74,7 +74,7 @@
   }
 
   &:hover {
-    box-shadow: 0.5rem 0.5rem 1rem $color-main;
+    box-shadow: 0.5rem 0.5rem 1rem var(--color-main);
   }
 }
 
@@ -126,7 +126,7 @@
   @media #{$desktop-bp} {
     width: 100%;
     height: 100%;
-    box-shadow: 0.25rem 0.5rem 0.5rem $color-line-border;
+    box-shadow: 0.25rem 0.5rem 0.5rem var(--color-line-border);
 
     &:hover {
       box-shadow: 0.25rem 0.25rem 0.25rem #4b4b4b;
